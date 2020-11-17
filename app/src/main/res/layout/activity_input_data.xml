@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#BF360C"
+    tools:context=".InputData">
+
+    <!--The label of this activity-->
+    <TextView
+        android:id="@+id/input_student_data_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="370dp"
+        android:text="@string/input_student_data_label"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--The input field label of the total number of students input-->
+    <TextView
+        android:id="@+id/input_total_number_of_students_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_number_of_students_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_total_number_of_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_total_number_of_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_student_data_label" />
+
+    <!--The input field of the total number of students-->
+    <EditText
+        android:id="@+id/input_total_number_of_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_total_number_of_students_label"
+        android:autofillHints="" />
+
+    <!--The input field label of grade A student-->
+    <TextView
+        android:id="@+id/input_grade_a_students_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/students_with_grade_a_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_grade_a_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_grade_a_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_total_number_of_students" />
+
+    <!--The input field of grade A students-->
+    <EditText
+        android:id="@+id/input_grade_a_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_a_students_label"
+        android:autofillHints="" />
+
+    <!--The input field label of grade B students-->
+    <TextView
+        android:id="@+id/input_grade_b_students_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/students_with_grade_b_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_grade_b_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_grade_b_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_a_students" />
+
+    <!--The input field of grade B students-->
+    <EditText
+        android:id="@+id/input_grade_b_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_b_students_label"
+        android:autofillHints="" />
+
+    <!--The input field label of grade C students-->
+    <TextView
+        android:id="@+id/input_grade_c_students_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/students_with_grade_c_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_grade_c_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_grade_c_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_b_students" />
+
+    <!--The input field of grade C students-->
+    <EditText
+        android:id="@+id/input_grade_c_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_c_students_label"
+        android:autofillHints="" />
+
+    <!--The input field label of grade D students-->
+    <TextView
+        android:id="@+id/input_grade_d_students_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/students_with_grade_d_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_grade_d_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_grade_d_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_c_students" />
+
+    <!--The input field of grade D students-->
+    <EditText
+        android:id="@+id/input_grade_d_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_d_students_label"
+        android:autofillHints="" />
+
+    <!--The input field label of grade F students-->
+    <TextView
+        android:id="@+id/input_grade_f_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/students_with_grade_f_label"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/input_grade_f_students"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_grade_f_students"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_d_students" />
+
+    <!--The input field of grade F students-->
+    <EditText
+        android:id="@+id/input_grade_f_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/input_design"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_f_label" />
+
+    <!--The button to calculate data-->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_grade_f_students" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
